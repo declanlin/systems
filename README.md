@@ -1,13 +1,11 @@
-# systems
-
-# Introduction (Linux Environment, GNU C++ Toolchain, and C++)
+# Introduction (Linux Environment, GNU Toolchain, and C++)
 
 PLACEHOLDER
 
 ## Linux Environment
 
 This portion of the introduction is meant to describe Linux as a software development environment,
-as opposed to its conventional use case as an operating system (kernel).
+as opposed to exploring the Linux kernel or operating system internals.
 
 ### Filesystem
 
@@ -36,3 +34,9 @@ Examples of commonly used shell commands and command-line utilities and their us
 - find - searches a directory hierarchy for files and directories matching specified criteria.
 
 Ultimately, the filesystem is the persistent workspace in which the software development process takes place.
+
+## GNU Toolchain
+
+C++ source code exists as human-readable text, and cannot be executed directly by the computer's processor (CPU). Instead, the source code must first be transformed into an executable program targeting the CPU's instruction set architecture (ISA). The GNU toolchain is a collection of development tools used to facilitate this transformation process.
+
+For C++ development, the primary interface to this toolchain is g++, the C++ compiler driver. 
