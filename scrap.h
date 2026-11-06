@@ -76,3 +76,14 @@
 
 enum class Side : std::uint8_t { Bid, Ask };
 
+// Prior to C++11, type aliases were created using:
+
+// typedef std::uint64_t OrderId;
+
+// With the introduction of the "using" keyword in C++11, type aliases
+// can be created as follows:
+
+using OrderId = std::uint64_t;
+using Price = std::int64_t;
+using Volume = std::uint32_t;
+
