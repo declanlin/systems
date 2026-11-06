@@ -87,3 +87,20 @@ using OrderId = std::uint64_t;
 using Price = std::int64_t;
 using Volume = std::uint32_t;
 
+// Useful thoughts:
+
+/*
+
+The engine's job is almost stupidly mechanical:
+    Do any currently compatible intentions exist?
+
+The matching engine does not determine the fundamental value of the asset.
+Those prices exist because actual market participants have submitted orders saying:
+    Buyer A:  I'll pay up to $99.
+    Seller B: I won't sell for less than $101.
+
+If you're aggressive, your limit orders will probably get filled faster.
+However, your limit is permission to the matching engine to keep consuming liquidity up
+to that price.
+
+*/
